@@ -70,20 +70,48 @@ function createParticles() {
 }
 createParticles();
 
-/* ========== 表单提交 ========== */
+/* ========== 表单提交（真实 API） ========== */
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = contactForm.querySelector('button[type="submit"]');
   const originalText = btn.textContent;
-  btn.textContent = '提交成功！';
-  btn.style.background = '#10AC84';
+  const originalBg = btn.style.background;
+
+  // 禁用按钮，显示加载状态
   btn.disabled = true;
+  btn.textContent = '提交中...';
+
+  try {
+    const formData = new FormData(contactForm);
+    const data = Object.fromEntries(formData);
+
+    const response = await fetch('/api/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      btn.textContent = '✅ 提交成功！';
+      btn.style.background = '#10AC84';
+      contactForm.reset();
+    } else {
+      btn.textContent = '❌ ' + (result.error || '提交失败');
+      btn.style.background = '#FF5F56';
+    }
+  } catch (err) {
+    btn.textContent = '❌ 网络错误，请重试';
+    btn.style.background = '#FF5F56';
+  }
+
+  // 3秒后恢复
   setTimeout(() => {
     btn.textContent = originalText;
-    btn.style.background = '';
+    btn.style.background = originalBg;
     btn.disabled = false;
-    contactForm.reset();
   }, 3000);
 });
 
