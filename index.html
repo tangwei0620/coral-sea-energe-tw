@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>珊瑚海能碳管家 — 智驭能源，碳索未来</title>
+  <meta name="description" content="珊瑚海能碳管家：绿电直连监测、能效看板分析、碳核算与合规。深耕能源数字化十年，让每一度电都有据可循。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 导航栏 ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <!-- 珊瑚海 Logo SVG -->
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+          <path d="M12 28c2-8 4-12 8-16 4 4 6 8 8 16" stroke="#FF6B35" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="20" cy="14" r="2.5" fill="#FF6B35"/>
+          <path d="M14 22c3-2 5-2 6-2s3 0 6 2" stroke="#0A2E5C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M16 26c2-1 3-1 4-1s2 0 4 1" stroke="#0A2E5C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">珊瑚海能碳管家</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#capabilities">平台能力</a></li>
+        <li><a href="#advantages">行业优势</a></li>
+        <li><a href="#solutions">解决方案</a></li>
+        <li><a href="#preview">平台预览</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">预约演示</a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero 首屏 ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-waves">
+      <svg class="wave wave-1" viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,100 C360,20 720,180 1440,80 L1440,200 L0,200 Z" fill="rgba(255,107,53,0.08)"/>
+      </svg>
+      <svg class="wave wave-2" viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,120 C480,40 960,160 1440,60 L1440,200 L0,200 Z" fill="rgba(255,107,53,0.05)"/>
+      </svg>
+      <svg class="wave wave-3" viewBox="0 0 1440 200" preserveAspectRatio="none">
+        <path d="M0,140 C320,60 640,180 1440,100 L1440,200 L0,200 Z" fill="rgba(255,107,53,0.03)"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-slogan">智驭能源，碳索未来</h1>
+      <p class="hero-sub">绿电直连监测 · 能效看板分析 · 碳核算与合规</p>
+      <p class="hero-desc">深耕能源数字化十年，为工业园区、商业综合体和电力企业提供一站式能碳管理解决方案</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">预约演示</a>
+        <a href="#capabilities" class="btn btn-outline">了解更多</a>
+      </div>
+    </div>
+    <!-- 装饰粒子 -->
+    <div class="hero-particles" id="heroParticles"></div>
+  </section>
+
+  <!-- ===== 核心能力 ===== -->
+  <section class="capabilities" id="capabilities">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">三大核心能力</h2>
+        <p class="section-subtitle">从数据采集到决策支持，覆盖能碳管理全链路</p>
+      </div>
+      <div class="card-grid">
+        <div class="card" data-animate>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M14 22h20M14 28h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="14" r="3" fill="currentColor"/><path d="M20 8V4M28 8V4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>绿电直连监测</h3>
+          <p>实时接入电表与采集终端数据，无需人工抄表，分钟级数据刷新。支持国网/南网主流协议，即插即用。</p>
+          <ul class="card-features">
+            <li>分钟级数据采集</li>
+            <li>多协议自动适配</li>
+            <li>异常用电实时告警</li>
+          </ul>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M12 32l8-10 6 6 10-14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="14" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>能效看板分析</h3>
+          <p>多维度能效指标可视化，同比环比趋势一目了然。智能识别能耗异常，自动推送节能优化建议。</p>
+          <ul class="card-features">
+            <li>多维能效指标看板</li>
+            <li>智能异常诊断</li>
+            <li>峰谷用电策略优化</li>
+          </ul>
+        </div>
+        <div class="card" data-animate>
+          <div class="card-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M24 14v10l7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6c0-2 2-4 6-4s6 2 6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 38c-2 2-1 5 2 6s6 0 8-2M38 38c2 2 1 5-2 6s-6 0-8-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>碳核算与合规</h3>
+          <p>自动匹配排放因子，精准核算碳足迹。生成符合国家标准的碳排放报告，无缝对接碳交易与碳配额管理。</p>
+          <ul class="card-features">
+            <li>自动碳排放核算</li>
+            <li>国家标准报告输出</li>
+            <li>碳配额与交易对接</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 行业优势 ===== -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">为什么选择珊瑚海</h2>
+        <p class="section-subtitle">懂能源、懂电力、懂数字化——我们与互联网公司有本质不同</p>
+      </div>
+      <div class="adv-grid">
+        <div class="adv-item" data-animate>
+          <div class="adv-number">10<span>年</span></div>
+          <h3>深耕能源数字化</h3>
+          <p>十年磨一剑，从电力现场采集到数字化平台，我们走过每一个坑，知道真实的业务痛点在哪里。</p>
+        </div>
+        <div class="adv-item" data-animate>
+          <div class="adv-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l16 8v16c0 8-6 14-16 18C14 42 8 36 8 28V12l16-8z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>懂电力懂规则</h3>
+          <p>熟悉国网/南网技术规范、电力交易规则、碳配额政策。不做"外行指挥内行"，方案直接落地。</p>
+        </div>
+        <div class="adv-item" data-animate>
+          <div class="adv-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="2" stroke="currentColor" stroke-width="2.5"/><path d="M6 22h36" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="18" r="1.5" fill="currentColor"/><circle cx="20" cy="18" r="1.5" fill="currentColor"/><path d="M14 30h8M14 34h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>数据安全可控</h3>
+          <p>支持私有化部署，能源数据不出园区。符合等保要求，满足政企客户对数据安全的刚性需求。</p>
+        </div>
+        <div class="adv-item" data-animate>
+          <div class="adv-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V16l16-12 16 12v24H8z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><rect x="18" y="26" width="12" height="14" stroke="currentColor" stroke-width="2"/><path d="M24 4v6M4 18h6M38 18h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>灵活可定制</h3>
+          <p>不同行业、不同规模，能碳管理的需求千差万别。我们提供模块化能力，按需组合，快速交付。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 解决方案 ===== -->
+  <section class="solutions" id="solutions">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">场景化解决方案</h2>
+        <p class="section-subtitle">针对不同行业场景，提供精准的能碳管理方案</p>
+      </div>
+      <div class="tab-nav">
+        <button class="tab-btn active" data-tab="industrial">工业园区</button>
+        <button class="tab-btn" data-tab="commercial">商业综合体</button>
+        <button class="tab-btn" data-tab="utility">电力企业</button>
+        <button class="tab-btn" data-tab="government">政府园区</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-panel active" id="tab-industrial">
+          <div class="solution-layout">
+            <div class="solution-info">
+              <h3>工业园区能碳管理</h3>
+              <p>园区能耗总量大、企业类型多、管理难度高。珊瑚海提供园区级能耗总览，企业用能排名与对标，节能改造效果量化评估。</p>
+              <ul class="solution-list">
+                <li><strong>园区能耗总览</strong> — 实时掌握全园区用电、用气、用热</li>
+                <li><strong>企业用能排名</strong> — 单位面积能耗、万元产值能耗对标</li>
+                <li><strong>节能改造评估</strong> — 改造前后效果量化，投资回报测算</li>
+                <li><strong>碳排放双控</strong> — 能耗总量+强度双控指标实时监测</li>
+              </ul>
+            </div>
+            <div class="solution-visual">
+              <div class="mock-chart">
+                <div class="mock-chart-header">园区能耗总览</div>
+                <div class="mock-chart-body">
+                  <div class="mock-bar-group">
+                    <span class="mock-bar-label">企业A</span>
+                    <div class="mock-bar" style="--bar-width:85%;--bar-color:#FF6B35"></div>
+                  </div>
+                  <div class="mock-bar-group">
+                    <span class="mock-bar-label">企业B</span>
+                    <div class="mock-bar" style="--bar-width:72%;--bar-color:#2E86DE"></div>
+                  </div>
+                  <div class="mock-bar-group">
+                    <span class="mock-bar-label">企业C</span>
+                    <div class="mock-bar" style="--bar-width:58%;--bar-color:#0A2E5C"></div>
+                  </div>
+                  <div class="mock-bar-group">
+                    <span class="mock-bar-label">企业D</span>
+                    <div class="mock-bar" style="--bar-width:43%;--bar-color:#10AC84"></div>
+                  </div>
+                  <div class="mock-bar-group">
+                    <span class="mock-bar-label">企业E</span>
+                    <div class="mock-bar" style="--bar-width:31%;--bar-color:#576574"></div>
+                  </div>
+                </div>
+                <div class="mock-chart-footer">单位：万kWh · 本月累计</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-commercial">
+          <div class="solution-layout">
+            <div class="solution-info">
+              <h3>商业综合体能效优化</h3>
+              <p>空调、照明是商业建筑的能耗大户。珊瑚海提供分项计量与精细化管理，峰谷用电优化策略，助力降本增效。</p>
+              <ul class="solution-list">
+                <li><strong>分项计量</strong> — 空调、照明、动力、特殊用电独立监测</li>
+                <li><strong>峰谷优化</strong> — 用电策略自动推荐，节省电费支出</li>
+                <li><strong>舒适度联动</strong> — 能耗与室内环境参数关联分析</li>
+                <li><strong>绿色认证</strong> — 支持LEED/绿色建筑评价数据输出</li>
+              </ul>
+            </div>
+            <div class="solution-visual">
+              <div class="mock-chart">
+                <div class="mock-chart-header">分项能耗占比</div>
+                <div class="mock-chart-body">
+                  <div class="mock-donut">
+                    <svg viewBox="0 0 120 120">
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="#e8ecf1" stroke-width="16"/>
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="#FF6B35" stroke-width="16" stroke-dasharray="125 189" stroke-dashoffset="0" transform="rotate(-90 60 60)"/>
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="#2E86DE" stroke-width="16" stroke-dasharray="75 239" stroke-dashoffset="-125" transform="rotate(-90 60 60)"/>
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="#0A2E5C" stroke-width="16" stroke-dasharray="50 264" stroke-dashoffset="-200" transform="rotate(-90 60 60)"/>
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="#10AC84" stroke-width="16" stroke-dasharray="30 284" stroke-dashoffset="-250" transform="rotate(-90 60 60)"/>
+                      <text x="60" y="56" text-anchor="middle" fill="#0A2E5C" font-size="14" font-weight="bold">40%</text>
+                      <text x="60" y="70" text-anchor="middle" fill="#576574" font-size="9">空调</text>
+                    </svg>
+                  </div>
+                  <div class="mock-legend">
+                    <span class="legend-item"><i style="background:#FF6B35"></i>空调 40%</span>
+                    <span class="legend-item"><i style="background:#2E86DE"></i>照明 24%</span>
+                    <span class="legend-item"><i style="background:#0A2E5C"></i>动力 16%</span>
+                    <span class="legend-item"><i style="background:#10AC84"></i>其他 20%</span>
+                  </div>
+                </div>
+                <div class="mock-chart-footer">月度分项能耗占比分析</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-utility">
+          <div class="solution-layout">
+            <div class="solution-info">
+              <h3>电力企业精准运营</h3>
+              <p>面向售电公司与配电企业，珊瑚海提供售电量分析、线损监测、绿电消纳比例追踪，助力精细化运营。</p>
+              <ul class="solution-list">
+                <li><strong>售电量分析</strong> — 分时、分区、分客户多维度统计</li>
+                <li><strong>线损监测</strong> — 技术线损与管理线损分离量化</li>
+                <li><strong>绿电消纳</strong> — 新能源消纳比例实时追踪</li>
+                <li><strong>电力交易支持</strong> — 用电预测辅助交易决策</li>
+              </ul>
+            </div>
+            <div class="solution-visual">
+              <div class="mock-chart">
+                <div class="mock-chart-header">月度售电量趋势</div>
+                <div class="mock-chart-body">
+                  <div class="mock-line-chart">
+                    <svg viewBox="0 0 300 120" class="line-svg">
+                      <polyline points="20,90 60,70 100,80 140,50 180,40 220,55 260,30" fill="none" stroke="#FF6B35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <polyline points="20,100 60,85 100,95 140,70 180,65 220,75 260,50" fill="none" stroke="#2E86DE" stroke-width="2" stroke-dasharray="5,5" stroke-linecap="round"/>
+                      <text x="20" y="115" fill="#576574" font-size="8">1月</text>
+                      <text x="60" y="115" fill="#576574" font-size="8">2月</text>
+                      <text x="95" y="115" fill="#576574" font-size="8">3月</text>
+                      <text x="132" y="115" fill="#576574" font-size="8">4月</text>
+                      <text x="172" y="115" fill="#576574" font-size="8">5月</text>
+                      <text x="212" y="115" fill="#576574" font-size="8">6月</text>
+                      <text x="252" y="115" fill="#576574" font-size="8">7月</text>
+                    </svg>
+                  </div>
+                  <div class="mock-legend">
+                    <span class="legend-item"><i style="background:#FF6B35"></i>今年</span>
+                    <span class="legend-item"><i style="background:#2E86DE"></i>去年</span>
+                  </div>
+                </div>
+                <div class="mock-chart-footer">单位：亿kWh · 同比分析</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-government">
+          <div class="solution-layout">
+            <div class="solution-info">
+              <h3>政府园区碳监管</h3>
+              <p>面向地方政府与园区管委会，珊瑚海提供碳排放双控考核支撑、区域碳地图、政策对标分析，助力"双碳"目标落地。</p>
+              <ul class="solution-list">
+                <li><strong>双控考核</strong> — 能耗总量+强度指标实时达标监测</li>
+                <li><strong>区域碳地图</strong> — 碳排放空间分布可视化</li>
+                <li><strong>政策对标</strong> — 自动匹配国家/地方双碳政策要求</li>
+                <li><strong>数据上报</strong> — 一键生成合规报告，对接上级系统</li>
+              </ul>
+            </div>
+            <div class="solution-visual">
+              <div class="mock-chart">
+                <div class="mock-chart-header">区域碳排放达标率</div>
+                <div class="mock-chart-body">
+                  <div class="mock-metrics">
+                    <div class="mock-metric">
+                      <div class="metric-ring" style="--progress:78%;--color:#10AC84">
+                        <span>78%</span>
+                      </div>
+                      <div class="metric-label">能耗强度</div>
+                    </div>
+                    <div class="mock-metric">
+                      <div class="metric-ring" style="--progress:92%;--color:#FF6B35">
+                        <span>92%</span>
+                      </div>
+                      <div class="metric-label">碳强度</div>
+                    </div>
+                    <div class="mock-metric">
+                      <div class="metric-ring" style="--progress:65%;--color:#2E86DE">
+                        <span>65%</span>
+                      </div>
+                      <div class="metric-label">绿电占比</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mock-chart-footer">2026年度双控考核进度</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 平台预览 ===== -->
+  <section class="preview" id="preview">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">平台预览</h2>
+        <p class="section-subtitle">这不是概念图——这就是你即将使用的能碳管家</p>
+      </div>
+      <div class="preview-dashboard" data-animate>
+        <div class="dash-topbar">
+          <div class="dash-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="dash-title">珊瑚海能碳管家 — 控制台</div>
+          <div class="dash-time">2026-06-14 18:30</div>
+        </div>
+        <div class="dash-body">
+          <div class="dash-sidebar">
+            <div class="dash-nav-item active">总览</div>
+            <div class="dash-nav-item">能耗监测</div>
+            <div class="dash-nav-item">能效分析</div>
+            <div class="dash-nav-item">碳核算</div>
+            <div class="dash-nav-item">告警中心</div>
+            <div class="dash-nav-item">报告</div>
+          </div>
+          <div class="dash-main">
+            <div class="dash-cards">
+              <div class="dash-kpi">
+                <div class="kpi-label">今日用电</div>
+                <div class="kpi-value">12,486 <small>kWh</small></div>
+                <div class="kpi-change down">↓ 3.2%</div>
+              </div>
+              <div class="dash-kpi">
+                <div class="kpi-label">本月碳排放</div>
+                <div class="kpi-value">186.5 <small>tCO₂</small></div>
+                <div class="kpi-change down">↓ 5.8%</div>
+              </div>
+              <div class="dash-kpi">
+                <div class="kpi-label">能效评分</div>
+                <div class="kpi-value">87 <small>分</small></div>
+                <div class="kpi-change up">↑ 2.1</div>
+              </div>
+              <div class="dash-kpi">
+                <div class="kpi-label">绿电占比</div>
+                <div class="kpi-value">34.6 <small>%</small></div>
+                <div class="kpi-change up">↑ 4.2%</div>
+              </div>
+            </div>
+            <div class="dash-chart-area">
+              <div class="dash-chart-placeholder">
+                <svg viewBox="0 0 400 100" class="area-chart">
+                  <defs>
+                    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,80 C30,70 60,75 100,55 C140,35 170,50 210,30 C250,10 280,25 320,20 C350,15 380,18 400,12 L400,100 L0,100 Z" fill="url(#areaGrad)"/>
+                  <polyline points="0,80 100,55 210,30 320,20 400,12" fill="none" stroke="#FF6B35" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 联系我们 ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">开始您的能碳之旅</h2>
+        <p class="section-subtitle">预约演示，了解珊瑚海如何为您的业务赋能</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+            </div>
+            <div class="form-group">
+              <label for="company">公司/单位</label>
+              <input type="text" id="company" name="company" placeholder="请输入公司或单位名称">
+            </div>
+            <div class="form-group">
+              <label for="phone">联系电话</label>
+              <input type="tel" id="phone" name="phone" placeholder="请输入联系电话" required>
+            </div>
+            <div class="form-group">
+              <label for="interest">关注方向</label>
+              <select id="interest" name="interest">
+                <option value="">请选择</option>
+                <option value="monitoring">绿电监测</option>
+                <option value="efficiency">能效分析</option>
+                <option value="carbon">碳核算</option>
+                <option value="all">整体方案</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="message">补充说明</label>
+              <textarea id="message" name="message" rows="3" placeholder="请描述您的需求或问题"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">提交预约</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <div>
+              <h4>电话咨询</h4>
+              <p>18502340620</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <h4>邮件联系</h4>
+              <p>41398385@qq.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h4>办公地址</h4>
+              <p>中国重庆</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="footer-logo-icon" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#FF6B35" stroke-width="2.5" fill="none"/>
+            <path d="M12 28c2-8 4-12 8-16 4 4 6 8 8 16" stroke="#FF6B35" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="20" cy="14" r="2.5" fill="#FF6B35"/>
+          </svg>
+          <span>珊瑚海能碳管家</span>
+        </div>
+        <p class="footer-copy">© 2026 珊瑚海能碳管家 · 智驭能源，碳索未来</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
